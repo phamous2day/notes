@@ -23,7 +23,9 @@
         .env
 
 in it so that git will not try to commit the .env which contains credentials in it.
+
 12. Install the python-dotenv module: `pip install python-dotenv`
+13. 
 13. In your Python server file (I called mine server.py), add these lines at the top, or at least in the top portion where you do all the imports:
 
         from dotenv import load_dotenv, find_dotenv
@@ -52,13 +54,9 @@ The word **"server"** refers to my server.py, so if you named it something else,
 
 
 18. Next, Heroku needs to know what Python modules you need for your app so it can install them remotely. To do this, you need a requirements.txt that lists all Python modules you have installed. You can do this with the command: `pip freeze > requirements.txt`
-19. 
 
 18.2 Add everything to git - except, of course your .env file. Commit the changes.
-
 19. Deploy your app with `git push heroku master`. The remote repository of "heroku" was already created for you back when you did `heroku create` earlier.
-
-
 20. Next, you need to configure the database credentials for Heroku as environment variables, line by line
 
         $ heroku config:set DBNAME=YOUR_DB_NAME
