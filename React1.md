@@ -15,9 +15,9 @@
 
 *Nested JSX expressions can be saved as variables
 ```js
-var theGoogle(
+var theGoogle= (
 <a href = "https://www.google.com">
-<h1> Click me, I'm google </h1>
+<h1> "Click me, I'm google" </h1>
 />
 );
 ```
@@ -33,7 +33,7 @@ Like this:
 
 ```js
 ReactDOM.render(
-<h1> Hello WOrld </h1>,
+<h1> Hello World </h1>,
 document.getElementById('app)
 ```
 
@@ -44,4 +44,4 @@ Only updating the necessary DOM elements is a larage part popularized by only ch
 
 > Think of changing the virtual DOM as editing the blueprint as apposed to changing rooms in the whole house all the time.
 
-[!picture] (http://media.lifehealthpro.com/lifehealthpro/article/2015/06/11/914-reality-vs-blueprint-515657165-738x415ts.jpg)
+![picture](http://media.lifehealthpro.com/lifehealthpro/article/2015/06/11/914-reality-vs-blueprint-515657165-738x415ts.jpg)
