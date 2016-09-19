@@ -31,7 +31,7 @@ placement/location on the elementId
 )
 Like this:
 
-```js
+```javascript
 ReactDOM.render(
 <h1> Hello World </h1>,
 document.getElementById('app')
@@ -45,3 +45,48 @@ Only updating the necessary DOM elements is a larage part popularized by only ch
 > Think of changing the virtual DOM as editing the blueprint as apposed to changing rooms in the whole house all the time.
 
 ![picture](http://media.lifehealthpro.com/lifehealthpro/article/2015/06/11/914-reality-vs-blueprint-515657165-738x415ts.jpg)
+
+After React uses diffing, it then only changes the virtual objects that have change on the real DOM. React updates only the necessary parts. To summarize:
+1. Entire virtual DOM gets updated
+2. Diffing happens
+3. Changed Objects and only Changed Objects get updated in real DOM
+4. Changse on real DOM cause screen to change
+
+##Advance JSX
+Can't use "class" as that's a reserved term. Instead, use "className" (yes, include the upper camelcase) like this:
+
+```js
+ReactDOM.render(
+<h1> {2+3} </h1>,
+document.getElementById('app)
+);
+```
+
+##Event Listeners
+
+```js
+<img onClick={myFunction} />
+```
+
+To insert conditionals, it'll look like this:
+
+```js
+if (coinToss()== 'heads' {
+var img = <img src = {pics.kitty} />;
+} else {
+var img = <img src = {pics.doggy} />,
+}
+```
+
+##Ternary Operator
+> x ? y:z
+This means check if x is true, then execute y, if it's false then execute z.
+
+
+#Part 2: Components (reuseable code)
+
+require('react') ------------> returns a JS object with methods needed to use React.
+
+require('react-dom') --------> returns JS object with methods to interact with DOM.
+
+~Every component classes is like a factory that creates components. To use this, it's React.createClass
