@@ -58,7 +58,7 @@ Can't use "class" as that's a reserved term. Instead, use "className" (yes, incl
 ```js
 ReactDOM.render(
 <h1> {2+3} </h1>,
-document.getElementById('app)
+document.getElementById('app')
 );
 ```
 
