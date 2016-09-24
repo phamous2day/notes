@@ -14,6 +14,7 @@
 ##Nested JSX
 
 *Nested JSX expressions can be saved as variables
+
 ```js
 var theGoogle= (
 <a href = "https://www.google.com">
@@ -31,7 +32,7 @@ placement/location on the elementId
 )
 Like this:
 
-```javascript
+```js
 ReactDOM.render(
 <h1> Hello World </h1>,
 document.getElementById('app')
@@ -83,10 +84,17 @@ var img = <img src = {pics.doggy} />,
 This means check if x is true, then execute y, if it's false then execute z.
 
 
-#Part 2: Components (reuseable code)
+#Part 2: Components (reuseable code) and Props (properties)
 
 require('react') ------------> returns a JS object with methods needed to use React.
 
 require('react-dom') --------> returns JS object with methods to interact with DOM.
 
 ~Every component classes is like a factory that creates components. To use this, it's React.createClass
+
+Properties/Props are passed in from the parent and they're immutable and don't change when components came alive.
+
+##3 API's React uses a lot
+1. componentDidMount: method gets called after component rendered
+2. getInitialState: method runs before component gets rendered allows you to mod component's state object
+3. setState: method lets you update value of state object
