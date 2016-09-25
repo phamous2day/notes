@@ -88,9 +88,9 @@ This means check if x is true, then execute y, if it's false then execute z.
 
 require('react') ------------> returns a JS object with methods needed to use React.
 
-require('react-dom') --------> returns JS object with methods to interact with DOM.
+require('react-dom') --------> return JS object with methods to interact with DOM.
 
-~Every component classes is like a factory that creates components. To use this, it's React.createClass
+~Every component classes are like a factory that creates components. To use this it's React.createClass
 
 Properties/Props are passed in from the parent and they're immutable and don't change when components came alive.
 
