@@ -70,3 +70,14 @@ alert(state);       #on
 
 ###Closures
 allow functions to keep on working even if their environments drastically change or dissappears.
+
+### _proto_
+Points to internally defined objects. It's a prototype object that has no properties of its own, but can access any properties the object continas through the prototype.
+
+> Analog Analogy: prototype is like a little kid with no money/properties. But it has a parent that has money/properties, which the child often asks for money/properties it needs.
+
+Javascript uses what's known as a *prototypical inheritance model*; you don't instantiate objects from a template, but 
+
+* clone from another object
+or
+*create objects from scratch
