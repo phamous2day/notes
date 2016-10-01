@@ -81,3 +81,18 @@ Javascript uses what's known as a *prototypical inheritance model*; you don't in
 * clone from another object
 or
 *create objects from scratch
+
+
+###How the heck does "this" work?
+
+*this* keyword acts as a placeholder; references whatever object it's in that calls a method. This way, no need to type out Object Name all the time since the "this" references the object the methods are being called for.
+
+e.g. 
+this.method does this ____
+this.method does that ____
+
+VS
+
+| ObjectNameSuperman.savesmethod ObjectNamesSuperman.fliesmethod ObjectNameSuperman.heatvisionmethod | this.savesmethod this.fliesmethod this.heatvisionmethod |
+|----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+
