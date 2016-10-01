@@ -93,5 +93,5 @@ this.method does that ____
 
 VS
 
-| ObjectNameSuperman.savesmethod ObjectNamesSuperman.fliesmethod ObjectNameSuperman.heatvisionmethod | this.savesmethod  this.fliesmethod  this.heatvisionmethod |
-|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| ObjectNameSuperman.savesmethod ObjectNamesSuperman.fliesmethod ObjectNameSuperman.heatvisionmethod | this.savesmethod this.fliesmethod this.heatvisionmethod |
+|----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
