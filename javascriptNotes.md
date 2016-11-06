@@ -95,3 +95,28 @@ VS
 
 | ObjectNameSuperman.savesmethod ObjectNamesSuperman.fliesmethod ObjectNameSuperman.heatvisionmethod | this.savesmethod this.fliesmethod this.heatvisionmethod |
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+
+
+
+##Sololearn Notes
+
+###Objects
+
+*document.write() writes a string to the HTML document.
+*type and language (text/javascript) no longer need to be specified because it's deprecated
+
+*continue statement breaks only one interation in the loop, continues with next iteration
+
+```js
+for (i=0, i<10; i++){
+if (i == 5){
+continue;
+}
+document.write(i+ "<br");
+}
+```
+*Outputs*
+0 1 2 3 4 6 7 8 9 10   //no 5
+
+###3 types of popup boxes
+Alert(1 text parameter), Prompt(2 parameters: display, textbox), Confirm(1 conditional parameter)
