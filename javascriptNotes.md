@@ -120,3 +120,10 @@ document.write(i+ "<br");
 
 ###3 types of popup boxes
 Alert(1 text parameter), Prompt(2 parameters: display, textbox), Confirm(1 conditional parameter)
+
+###Access object properties in 2 ways:
+
+1. ObjectName.property.Name
+2. ObjectName['propertyName']
+
+
